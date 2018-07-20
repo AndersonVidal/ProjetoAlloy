@@ -30,16 +30,8 @@ one sig Root extends Directory{}
 sig CommonDirectory extends Directory{}
 
 // ------------------- Permissions ------------------
-// Permissões de usuario podem ser Leitura, Leitura e Escrita, ou Dono (Na lógica de conjuntos, A é W, W é R, mas R não é W e W não é A)
-/*
-	R ===============\ 	R - READ
-	|	W =========	\	|	W - WRITE
-	|	 |	A ====\	|	|	A - ADMIN
-	|	 |	|	 	|	|	|
-	|	 |	\ ==== /	|	|
-	|	 \ ========= /	|
-	\ ===============/
-*/
+// Permissões de usuario podem ser Leitura, Leitura e Escrita, ou Dono
+
 abstract sig Permission{}
 sig Read in Permission{}
 sig Write in Read{}
